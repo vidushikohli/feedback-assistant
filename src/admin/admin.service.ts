@@ -1,0 +1,19 @@
+import { Injectable } from '@nestjs/common';
+
+export type Coadmin = any;
+
+@Injectable()
+export class CoadminService {
+    private readonly users = [
+        {
+          username: 'admin',
+          password: 'password',
+        },
+        
+      ];
+    
+      async findOne(username: string): Promise<Coadmin | undefined> {
+        return this.users.find(user => user.username === username);
+      }
+}
+
