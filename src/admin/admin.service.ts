@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 
-export type Coadmin = any;
+export type Admin = any;
 
 @Injectable()
-export class CoadminService {
+export class AdminService {
     private readonly users = [
         {
           username: 'admin',
@@ -12,7 +12,7 @@ export class CoadminService {
         
       ];
     
-      async findOne(username: string): Promise<Coadmin | undefined> {
+      async findOne(username: string): Promise<Admin | undefined> {
         return this.users.find(user => user.username === username);
       }
 }

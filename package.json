@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
+    
   },
   "dependencies": {
     "@nestjs/jwt": "^11.0.2",
@@ -23,6 +24,7 @@
     "openai": "^6.45.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
+    
   },
   "devDependencies": {
     "@nestjs/testing": "^10.0.0",
@@ -38,4 +40,5 @@
     "tailwindcss": "^4",
     "ts-jest": "^29.1.0"
   }
+  
 }
